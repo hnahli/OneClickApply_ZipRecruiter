@@ -6,15 +6,16 @@ from selenium.webdriver.chrome.options import Options
 from bs4 import BeautifulSoup
 
 options = Options()
-options.add_argument("--user-data-dir=/Users/hnahli/Desktop/Upwork/Alex_Stiehl/Version2/chrome-data")
+options.add_argument("--user-data-dir=/Users/hnahli/GitHub/chrome-data")
 options.add_argument("--disable-infobars")
 options.add_argument("--enable-file-cookies")
-driver = webdriver.Chrome('/Users/hnahli/Desktop/Upwork/Alex_Stiehl/Version2/chromedriver', options=options)
-options.add_argument("user-data-dir=/Users/hnahli/Desktop/Upwork/Alex_Stiehl/Version2/chrome-data")
-options.add_argument("download.default_directory=/Users/hnahli/Desktop/Upwork/Alex_Stiehl/Version2/Comments")
+driver = webdriver.Chrome('/Users/hnahli/GitHub/chrome-data/chromedriver', options=options)
+options.add_argument("user-data-dir=/Users/hnahli/GitHub/chrome-data/chrome-data")
+options.add_argument("download.default_directory=/Users/hnahli/GitHub/chrome-data/download")
 driver.get('https://www.ziprecruiter.com/candidate/search?radius=5000&search=Work+from+home&location=Vancouver%2C+BC+Canada')
 driver.maximize_window()
 
+#Add Cities You Are Interested To Find Work in
 cities = [
     #'British Columbia, Canada',
     'Alberta, Canada',
