@@ -1,5 +1,4 @@
 import time
-
 from random import randint
 from termcolor import colored
 from selenium import webdriver
